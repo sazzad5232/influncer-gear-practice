@@ -78,6 +78,30 @@
   padding: 7px 7px;
   border: none;
 }
+.camera-img {
+  position: relative;
+}
+.camera-img .circle {
+  width: 485px;
+  height: 485px;
+}
+.camera-img .camera {
+  position: absolute;
+  width: 425px;
+  height: 425px;
+  padding-top: 65px;
+  padding-left: 27px;
+}
+/* brand name */
+
+.brand-icon-con {
+  max-width: 1110px;
+  margin: auto;
+  margin-top: 69px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* gap: 72px; */
+}
 
 /* responsive media query */
 /* responsive media query */
@@ -101,5 +125,16 @@
   .banner div img {
     width: 202px;
     height: 190px;
+  }
+  .brand-icon-con {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .brand-icon-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .brand-icon-con img {
+    place-items: center;
   }
 }

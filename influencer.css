@@ -9,7 +9,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* common style */
+
 .con-all {
   max-width: 1140px;
   margin: auto;
@@ -20,7 +22,9 @@
   font-size: 1rem;
   font-weight: 700;
 }
+
 /* nav bar */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -57,12 +61,14 @@
 }
 
 /* banner */
+
 .banner {
   margin-top: 42px;
   margin-bottom: 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: relative; */
 }
 .banner h2 {
   font-weight: 700;
@@ -78,22 +84,20 @@
   padding: 7px 7px;
   border: none;
 }
-.camera-img {
-  position: relative;
-}
+
 .camera-img .circle {
+  margin-left: 15px;
+  position: absolute;
   width: 485px;
   height: 485px;
 }
 .camera-img .camera {
-  position: absolute;
+  position: relative;
   width: 425px;
   height: 425px;
-  padding-top: 65px;
-  padding-left: 27px;
 }
 /* brand name */
-
+/* 
 .brand-icon-con {
   max-width: 1110px;
   margin: auto;
@@ -101,7 +105,6 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   /* gap: 72px; */
-}
 
 /* responsive media query */
 /* responsive media query */
@@ -122,19 +125,20 @@
     padding: 5px;
     padding-bottom: 9px;
   }
-  .banner div img {
-    width: 202px;
-    height: 190px;
+  .banner .camera-img .circle {
+    width: 232px;
+    height: 220px;
   }
-  .brand-icon-con {
+  .banner .camera-img .camera {
+    width: 222px;
+    height: 210px;
+  }
+  /*.brand-icon-con {
     display: flex;
     justify-content: space-evenly;
-  }
-  .brand-icon-con {
+  } */
+  /* .brand-icon-con {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-  .brand-icon-con img {
-    place-items: center;
-  }
+  } */
 }
